@@ -30,6 +30,15 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " All of your Plugins must be added before the following line
 " added nerdtree
 Plugin 'scrooloose/nerdtree'
+" It's annoying to delete and paste parts of a text just to move it up and
+" down a bit. There is the :m[ove] command but it is quite awkward to use by
+" todays standards. vim-move is a Vim plugin that moves lines and selections
+" in a more visual manner. Out of the box, the following keys are mapped in
+" visual and normal mode:
+" <C-k>   Move current line/selections up
+" <C-j>   Move current line/selections down
+Bundle 'matze/vim-move'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
@@ -47,6 +56,10 @@ filetype plugin indent on    " required
 "" NERDTree
 let g:NERDTreeChDirMode = 2 " switch CWD
 nmap <silent> <F7> :NERDTreeToggle<CR>
+
+" matze/vim-move
+" rebind from not working Alt to Ctrl
+let g:move_key_modifier = 'C'
 
 " Show line numbers and ruler
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
