@@ -70,4 +70,4 @@ set number
 set list
 nmap <silent> <F8> :set list<CR>
 nmap <silent> <leader><F8> :set nolist<CR>
-set listchars=tab:>-,trail:·,eol:$
+set listchars=tab:>-,trail:·,eol:↵
