@@ -39,6 +39,11 @@ Plugin 'scrooloose/nerdtree'
 " <C-j>   Move current line/selections down
 Bundle 'matze/vim-move'
 
+" This plugin adds a :Terraform command that runs terraform, with tab completion
+" of subcommands. It also sets up *.tf, *.tfvars, and *.tfstate files to be
+" highlighted as HCL, HCL, and JSON respectively.
+Plugin 'hashivim/vim-terraform'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
