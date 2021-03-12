@@ -44,6 +44,8 @@ Bundle 'matze/vim-move'
 " highlighted as HCL, HCL, and JSON respectively.
 Plugin 'hashivim/vim-terraform'
 
+" jedi-vim - awesome Python autocompletion with VIM
+Plugin 'davidhalter/jedi-vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
@@ -76,3 +78,8 @@ set list
 nmap <silent> <F8> :set list<CR>
 nmap <silent> <leader><F8> :set nolist<CR>
 set listchars=tab:>-,trail:·,eol:↵
+filetype plugin indent on
+
+"Set Tabs"
+set tabstop=4
+set shiftwidth=4
